@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3e11f034b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="components/menu.css">
+    <link rel="stylesheet" href="components/sidebar/sidebar.css">
+    <link rel="stylesheet" href="components/card/card.css">
+    <link rel="stylesheet" href="components/layout/grid.css">
+</head>
+<body>
+    <h1>menu</h1>
+
+    <!-- 
+        START MENU
+     -->
+    <nav class="menu">
+        <a href="#"><i class="fas fa-bars"></i>Inicio</a>
+        <a href="#"><i class="fas fa-bars"></i> Acerca de</a>
+        <a href="#"><i class="fas fa-bars"></i>Artículos</a>
+        <a href="#"><i class="fas fa-bars"></i>Contacto</a>
+    </nav>
+
+    <!-- 
+        END MENU
+     -->
+    <h1>sidebar</h1>
+
+    <!-- 
+        START SIDEBAR
+     -->
+    <!-- ACTIVADOR SIDEBAR -->
+    <div class="toggle-btn">
+        <span><i class="fas fa-bars"></i></span>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar" class="_active" >
+        <div class="sidebar-wrapper">
+            <div class="sidebar-header">
+                <div class="sidebar-item-close">     
+                    <span class="close-btn"><i class="fas fa-window-close"></i></span>
+                </div>
+                <div class="sidebar-image">
+                    <picture>
+                        <source srcset="img/alqCoches.png" media="(max-width: 600px)">
+                        <source srcset="img/alqCoches.png" media="(max-width: 1500px)">
+                        <source srcset="img/alqCoches.png">
+                        <img src="img/alqCoches.png" alt="Flowers">
+                    </picture> 
+                </div>
+            </div>
+            <div class="sidebar-body">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i>home</a></li>
+                    <li><a href="#"><i class="fas fa-bars"></i>home</a></li>
+                    <li><a href="#"><i class="fas fa-bars"></i>home</a></li>
+                    <li><a href="#"><i class="fas fa-bars"></i>home</a></li>
+                  </ul>
+            </div>
+            <div class="sidebar-footer">
+                &copy; copirigth 2020
+            </div>
+        </div> 
+      </div>
+
+      <!-- 
+          END SIDEBAR
+       -->
+       <h1>card</h1>
+       <!-- 
+           START CARD
+        -->
+        <div class="card card-translate card-shadow">
+            <picture>
+                <source srcset="img/car1.jpg" media="(max-width: 600px)">
+                <source srcset="img/car1.jpg" media="(max-width: 1500px)">
+                <source srcset="img/car1.jpg">
+                <img src="img/imgCar1.jpg" alt="Flowers">
+            </picture>
+            <div class="card-body">
+                <h3>Card Title</h3>
+                <div class="divider"></div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled
+                </p>
+                <button class="button-round">
+                    link
+                </button>
+            </div>
+        </div>
+        <!-- 
+            END CARD
+         -->
+
+         <h1>REJILLA</h1>
+        <!-- 
+            START CONTAINER
+         --> 
+         <div class="container">
+           <div class="grid grid-3fr">
+                <div class="grid-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Mision</h3>
+                            <div class="divider"></div>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Vision</h3>
+                            <div class="divider"></div>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Historia</h3>
+                            <div class="divider"></div>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled
+                            </p>
+                        </div>
+                    </div>
+                </div>
+           </div>
+         </div>
+         <!-- 
+            END CONTAINER
+         -->
+        <h1>testing virtual DOM</h1> 
+        <div class="container">
+            <div class="grid grid-3fr" id="testing">
+               
+            </div>
+        </div>
+      <script src="components/sidebar/sidebar.js"></script>
+      <script src="js/script.js"></script>
+</body>
+</html>

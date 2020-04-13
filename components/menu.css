@@ -1,0 +1,42 @@
+:root{
+    --menu-border: 0px solid #000;
+    --menu-primary-color:#000;
+    --menu-secondary-color: #fff; 
+    --menu-font-size: 1rem;
+    --menu-padding-item: 10px
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+.menu {
+	border-top: var(--menu-border);
+	border-bottom: var(--menu-border);
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu a {
+    
+	padding: var(--menu-padding-item);
+	color: var(--menu-primary-color);
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	width: 100%;
+	text-align: center;
+	transition: 0.2s ease all;
+	font-size: var(--menu-font-size);
+	transition: all .2s ease-in-out;
+}
+
+.menu a i {
+    margin-right: 5px;
+}
+
+.menu a:hover {
+	background: var(--menu-primary-color);;
+	color: var(--menu-secondary-color);;
+}
