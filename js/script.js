@@ -55,7 +55,9 @@ let cards = [
 
 //createCard(card)
 let testDOM = document.getElementById("testing")
-const $cards = createCards(cards)
+// formatDataCardsInfo(information)
+const $cards = createCards(card)
+
 $cards.forEach(element => {
     testDOM.appendChild(element)    
 });
