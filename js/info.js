@@ -1,9 +1,7 @@
-const information = [
+const information = [ // JSON
     {
         title: "Misión",
-        body: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled`
+        body: `Esta es la misión de la empresa, de renta de carros`
     },
     {
         title: "Visión",

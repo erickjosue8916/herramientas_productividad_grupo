@@ -1,3 +1,5 @@
+// DOM = Document Object Model
+
 function createElementDOM(element) {
     let {tag, attributes, content} = element
     let e = document.createElement(tag);
@@ -48,17 +50,27 @@ let cards = [
         body: [
             { tag: "h3", content: "Mision" },
             { tag: "div", attributes: { class: "divider" } },
-            { tag: "p", content: "Mision"}
+            { tag: "p", content: "Mision"},
+            { tag: "button", attributes: { class: "button-round" }, content: "Link"}
         ]
     }
 ]
 
+
+
+/*
+const h1 = document.createElement('h1')
+h1.setAttribute("class", "title")
+h1.textContent = "contenido del h1"
+console.log(h1)
+*/
 //createCard(card)
 let testDOM = document.getElementById("testing")
 // formatDataCardsInfo(information)
-const $cards = createCards(card)
+const $cards = createCards(formatDataCardsInfo(information))
 
 $cards.forEach(element => {
     testDOM.appendChild(element)    
 });
+
 //testDOM.appendChild(createCards(cards))

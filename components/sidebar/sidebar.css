@@ -1,10 +1,10 @@
 :root{
-  --sidebar-background: #151719;
+  --sidebar-background: hsl(214, 14%, 10%);
   --sidebar-color-items: rgba(230, 230, 230, .9);
   --sidebar-color-items-hover:  rgba(51, 136, 179, 0.9) ;
   --sidebar-transform-items: uppercase;
-  --sidebar-width: 200px;
-  --sidebar-position-left: -200px;
+  --sidebar-width: 300px;
+  --sidebar-position-left: -300px;
   --sidebar-items-text-align: center;
 }
 
@@ -66,7 +66,6 @@
 
 #sidebar.active {
   left: 0px;
-  width: var(--sidebar-width);
 }
 
 #sidebar ul li {

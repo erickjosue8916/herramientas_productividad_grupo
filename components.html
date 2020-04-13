@@ -17,12 +17,15 @@
     <!-- 
         START MENU
      -->
-    <nav class="menu">
-        <a href="#"><i class="fas fa-bars"></i>Inicio</a>
-        <a href="#"><i class="fas fa-bars"></i> Acerca de</a>
-        <a href="#"><i class="fas fa-bars"></i>Artículos</a>
-        <a href="#"><i class="fas fa-bars"></i>Contacto</a>
-    </nav>
+    <div class="container">
+        <nav class="menu">
+            <a href="#"><i class="fas fa-bars"></i>Inicio</a>
+            <a href="#"><i class="fas fa-bars"></i> Acerca de</a>
+            <a href="#"><i class="fas fa-bars"></i>Artículos</a>
+            <a href="#"><i class="fas fa-bars"></i>Contacto</a>
+            <a href="#"><i class="fas fa-bars"></i>Contacto</a>
+        </nav>
+    </div>
 
     <!-- 
         END MENU
@@ -38,7 +41,7 @@
     </div>
 
     <!-- SIDEBAR -->
-    <div id="sidebar" class="_active" >
+    <div id="sidebar" >
         <div class="sidebar-wrapper">
             <div class="sidebar-header">
                 <div class="sidebar-item-close">     
@@ -74,24 +77,26 @@
        <!-- 
            START CARD
         -->
-        <div class="card card-translate card-shadow">
-            <picture>
-                <source srcset="img/car1.jpg" media="(max-width: 600px)">
-                <source srcset="img/car1.jpg" media="(max-width: 1500px)">
-                <source srcset="img/car1.jpg">
-                <img src="img/imgCar1.jpg" alt="Flowers">
-            </picture>
-            <div class="card-body">
-                <h3>Card Title</h3>
-                <div class="divider"></div>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled
-                </p>
-                <button class="button-round">
-                    link
-                </button>
+        <div class="container">
+            <div class="card card-translate card-shadow">
+                <picture>
+                    <source srcset="img/car1.jpg" media="(max-width: 600px)">
+                    <source srcset="img/car1.jpg" media="(max-width: 1500px)">
+                    <source srcset="img/car1.jpg">
+                    <img src="img/imgCar1.jpg" alt="Flowers">
+                </picture>
+                <div class="card-body">
+                    <h3>Card Title</h3>
+                    <div class="divider"></div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled
+                    </p>
+                    <button class="button-round">
+                        link
+                    </button>
+                </div>
             </div>
         </div>
         <!-- 
@@ -105,7 +110,7 @@
          <div class="container">
            <div class="grid grid-3fr">
                 <div class="grid-center">
-                    <div class="card">
+                    <div class="card card-translate card-shadow">
                         <div class="card-body">
                             <h3>Mision</h3>
                             <div class="divider"></div>
@@ -155,7 +160,7 @@
             </div>
         </div>
     <script src="js/info.js"></script>
-      <script src="components/sidebar/sidebar.js"></script>
-      <script src="js/script.js"></script>
+    <script src="components/sidebar/sidebar.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

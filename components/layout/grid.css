@@ -21,8 +21,23 @@
     align-content: center;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 728px) {
+    :root {
+        --card-width: 250px;
+        --card-image-height: 170px; 
+    }
     .grid-3fr {
         grid-template-columns: 1fr;   
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-3fr {
+        grid-template-columns: 1fr;    
+    }
+    :root{
+        --sidebar-width: 100%;
+        --sidebar-position-left: -100%;
+        --sidebar-background: hsla(214, 14%, 10%, 0.95);
     }
 }
