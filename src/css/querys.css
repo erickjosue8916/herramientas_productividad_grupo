@@ -1,0 +1,40 @@
+@media (max-width: 960px) {
+    :root{
+        --caja-fondo: #cd7d32;
+    }
+}
+@media (max-width: 728px) {
+    :root{
+        --caja-fondo: #cd32c5;
+        --header-logo-end: 2;
+        --header-menu-start: 5; 
+    }
+    .menu{
+        display: none;
+    }
+    .toggle-btn {
+        justify-self: right;
+        display: grid;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-3fr {
+        grid-template-columns: 1fr;    
+    }
+    :root{
+        --header-logo-end: 3;
+        --header-menu-start: 11;
+        --header-menu-end: 13; 
+        --sidebar-width: 100%;
+        --sidebar-position-left: -100%;
+        --sidebar-background: hsla(214, 14%, 10%, 0.95);
+    }
+    .menu{
+        display: none;
+    }
+    .toggle-btn {
+        justify-self: right;
+        display: grid;
+    }
+}
