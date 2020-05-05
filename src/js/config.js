@@ -1,4 +1,13 @@
-const information = [ // JSON
+const config = { 
+    listeners: {
+      click: () => {
+        const toggle = ["active"]
+        editElelment("#sidebar", { toggle })
+      }
+    }
+  }
+  
+  const information = [ 
     {
         title: "Misión",
         body: `hdksdksdh`
@@ -15,19 +24,4 @@ const information = [ // JSON
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
         when an unknown printer took a galley of type and scrambled`
     }
-]
-
-function formatDataCardsInfo(info) {
-    return info.map(e => {
-        let { title, body } = e
-        return {
-            body: [
-                { tag: "h3", content: title },
-                { tag: "div", attributes: { class: "divider" } },
-                { tag: "p", content: body}
-            ]
-        }
-    })
-}
-
-console.log(formatDataCardsInfo(information))
+  ]

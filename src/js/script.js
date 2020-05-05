@@ -1,10 +1,12 @@
-const btnToggle = document.querySelector('.toggle-btn');
-const btnCloseSidebar = document.querySelector('.close-btn');
 
-btnCloseSidebar.addEventListener('click', function () {
-  document.getElementById('sidebar').classList.toggle('active');
-});
 
-btnToggle.addEventListener('click', function () {
-  document.getElementById('sidebar').classList.toggle('active');
+editElelment(".toggle-btn", config)
+editElelment(".close-btn", config)
+editElelment(".acive-sidebar", config)
+
+let cInfo = document.getElementById("container_info")
+const $cards = createCards(formatDataCardsInfo(information))
+
+$cards.forEach(element => {
+    cInfo.appendChild(element)    
 });

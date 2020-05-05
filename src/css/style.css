@@ -10,8 +10,7 @@
 }
 
 body {
-    display: grid;
-    font-size: 1rem;
+    font-size: 12px;
 }
 
 .header {
@@ -118,6 +117,7 @@ body {
     left: var(--sidebar-position-left);
     top: 0;
     transition: all .3s linear;
+    font-size: var(--sidebar-font-size);
   }
   
   #sidebar .sidebar-wrapper {
@@ -207,7 +207,75 @@ body {
 /* 
     START CARD STYLES
 */
+.card {
+  width: var(--card-width);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  background: var(--card-background);   
+  transition: var(--card-transition);
+  font-size: var(--card-font-size);
+}
 
+.card-shadow {
+  box-shadow: var(--card-shadow);
+}
+
+.card-shadow:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.card-translate:hover {
+  transform: translateY(-3%);
+}
+
+.card img {
+  width: 100%;
+  height: var(--card-image-height);
+}
+
+.card .card-body {
+  padding: var(--card-padding-body);
+  text-align: var(--card-text-align);
+}
+
+.card .card-body p {
+  line-height: var(--card-body-line-height);
+  color: var(--card-color);
+}
+
+.card .card-body h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.card .divider {
+  background: var(--card-divider-background);
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 1px;
+}
+
+.button-round {
+  padding: 10px;
+  padding-left: var(--card-button-padding);
+  padding-right: var(--card-button-padding);
+  width: auto;
+  margin: 15px;
+  border: 1px solid;
+  border-color: var(--card-button-color);
+  border-radius: 5px;
+  background: var(--card-button-background);
+  color: var(--card-button-color);
+  box-shadow: var(--card-shadow);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--card-transition);
+}
+
+.card .card-body button:hover {
+  background: #6a6a6a34;
+}
 /* 
     END CARD STYLES
 */

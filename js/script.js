@@ -1,5 +1,73 @@
 // DOM = Document Object Model
 
+/**
+ * GET ATTRIBUTE
+ */
+function getAtribute(selector, param) {
+    const el = document.getElementById(selector);
+    console.log(el)
+    return el[param]
+}
+
+/**
+ * EDIT ELEMENT PROPERTIES
+ *  
+ * */
+function editElelment(selector, config) {
+    const el = document.querySelectorAll(selector);
+    el.forEach(element => {
+        const { toggle, styles, text, listeners } = config;
+        if (toggle) {
+            toggle.forEach(clase => {
+                console.log(element, toggle)
+                element.classList.toggle(clase)
+            });
+        }
+
+        if (styles) {
+            for (const style in styles) {
+                element.style[style] = styles[style]
+            }
+        }
+
+        if (text) {
+            element.innerHTML = text
+        }
+
+        if (listeners) {
+            for (const event in listeners) {
+                element.addEventListener(event, listeners[event])
+            }
+        }
+    });
+}
+const config = {
+    toggle: [ "green", "big" ],
+    styles: {
+        height: "200px"
+    }
+}
+const config2 = {
+    text: "hola"
+}
+
+const config3 = {
+    listeners: {
+        click: () => {
+            const value = getAtribute("input-text", "value")
+            const $e = createElementDOM({ tag: "option", attributes: { value },  content: value });
+            console.log($e)
+            const $selector = document.getElementById("selector")
+            $selector.appendChild($e)
+            editElelment("#text", {text: `el valor de input-text es: ${getAtribute("input-text", "value")}`})
+        }
+    }
+}
+editElelment("#caja", config)
+editElelment("#text", config2)
+editElelment("#btn", config3)
+
+
 function createElementDOM(element) {
     let {tag, attributes, content} = element
     let e = document.createElement(tag);
