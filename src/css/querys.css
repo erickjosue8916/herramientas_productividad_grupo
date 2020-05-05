@@ -16,6 +16,9 @@
         justify-self: right;
         display: grid;
     }
+    .grid-3fr {
+        grid-template-columns: 1fr;    
+    }
 }
 
 @media (max-width: 480px) {

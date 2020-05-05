@@ -1,5 +1,3 @@
-
-
 editElelment(".toggle-btn", config)
 editElelment(".close-btn", config)
 editElelment(".acive-sidebar", config)

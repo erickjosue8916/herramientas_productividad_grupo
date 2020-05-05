@@ -37,6 +37,7 @@ body {
 .container{
     width: 90%;
     margin:auto;
+    display: grid;
 }
 
 .container .grid{
@@ -279,3 +280,32 @@ body {
 /* 
     END CARD STYLES
 */
+
+/* START SECTION STYLES */
+.container .section {
+  display: grid;
+  grid-template-rows: 50px auto;
+  grid-row-gap: 15px;
+  align-items: center;
+  min-height: 90vh;
+
+}
+
+.container .section .title-content {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.container .section .title-content a {
+
+  text-decoration: none;
+}
+
+.container .section .title-content .title {
+  padding-bottom: 15px;
+  color: #000;
+}
+
+/* END SECTION STYLES */
