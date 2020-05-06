@@ -6,27 +6,76 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carwash</title>
+    <script src="https://kit.fontawesome.com/3e11f034b2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mediumDevice.css">
-    <link rel="stylesheet" href="css/smallDevice.css">
+    <link rel="stylesheet" href="css/querys.css">
 </head>
 <body>
 
     <!-- Start Header -->
-    <div class="header header-large">
-        <div class="logo"><img src="img/alqCoches.png" alt=""></div>
-        <div><a href="">Home</a></div>
-        <div><a href="#about">Acerca de</a></div>
-        <div><a href="#vehicles">Vehiculos</a></div>
-        <div><a href="#contact">Contactos</a></div>
-        <div></div>
-        <div></div>
-        
+    <div class="header">
+        <div class="logo grid-center">
+            hola
+        </div>
+        <nav class="menu wrapper-menu">
+            <a href="#"><i class="fas fa-bars"></i>Inicio</a>
+            <a href="#"><i class="fas fa-bars"></i> Acerca de</a>
+            <a href="#"><i class="fas fa-bars"></i>Artículos</a>
+            <a href="#"><i class="fas fa-bars"></i>Contacto</a>
+            <a href="#"><i class="fas fa-bars"></i>Contacto</a>
+        </nav>
+        <div class="toggle-btn wrapper-menu">
+            <span><i class="fas fa-bars"></i></span>
+        </div>
     </div>
+    <!-- SIDEBAR -->
+    <div id="sidebar" >
+        <div class="sidebar-wrapper">
+            <div class="sidebar-header">
+                <div class="sidebar-item-close">     
+                    <span class="close-btn"><i class="fas fa-window-close"></i></span>
+                </div>
+                <div class="sidebar-image">
+                    <picture>
+                        <source srcset="img/alqCoches.png" media="(max-width: 600px)">
+                        <source srcset="img/alqCoches.png" media="(max-width: 1500px)">
+                        <source srcset="img/alqCoches.png">
+                        <img src="img/alqCoches.png" alt="Flowers">
+                    </picture> 
+                </div>
+            </div>
+            <div class="sidebar-body">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i>home</a></li>
+                    <li><a href="#"><i class="fas fa-bars"></i>home</a></li>
+                    <li><a href="#"><i class="fas fa-bars"></i>home</a></li>
+                    <li><a href="#"><i class="fas fa-bars"></i>home</a></li>
+                  </ul>
+            </div>
+            <div class="sidebar-footer">
+                &copy; copirigth 2020
+            </div>
+        </div> 
+      </div>
+      
+           
+      <!-- START INFO SECTION -->
+      <div class="container">
+        <div class="section">
+            <div class="title-content">
+                <a name="contact"><h1 class="title">Nosotros</h1></a>
+            </div>
+            <div class="form-content">
+                <div class="grid grid-3fr" id="container_info"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END INFO SECTION -->
 
-    <!-- hero -->
+<!-- 
+    
     <div class="hero">
         <div class="layer">
             <div class="title">
@@ -34,10 +83,7 @@
             </div>
         </div>
     </div>
-    <!-- Hero -->
     <div class="main">
-        <!--End Index -->
-        <!--Start About -->
         <a name="about"></a>
         <div class="container">
             <div class="section">
@@ -71,8 +117,8 @@
                 </div>
             </div>
         </div>
-        <!--End About -->
-        <!--Start Vehicles -->
+        <!--End About 
+        Start Vehicles 
         <a name="vehicles"></a>
         <div class="container">
             <div class="section">
@@ -147,5 +193,9 @@
             </div>
         </footer>
     </div>
+     -->
+     <script src="js/config.js"></script>
+     <script src="js/virtualDOM.js"></script>
+     <script src="js/script.js"></script>
 </body>
 </html>

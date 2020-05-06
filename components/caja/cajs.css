@@ -1,0 +1,41 @@
+/* configuracion */
+:root{
+    --caja-with: 300px;
+    --caja-height: 60px;
+    --caja-fondo: #cd3232;
+    --caja-padding: 5px;
+    --caja-color: #fff;
+}
+
+
+.caja {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: var(--caja-with);
+    height: var(--caja-height);
+    background: var(--caja-fondo);
+    padding: var(--caja-padding);
+    color: var(--caja-color);
+}
+
+.caja.items-center{
+    justify-items: center;
+}
+
+@media (max-width: 960px) {
+    :root{
+        --caja-fondo: #cd7d32;
+    }
+}
+@media (max-width: 728px) {
+    :root{
+        --caja-fondo: #cd32c5;
+    }
+}
+
+@media (max-width: 480px) {
+    :root{
+        --caja-fondo: #32cd47;
+        --header-padding: 5px;
+    }
+}

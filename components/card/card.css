@@ -1,0 +1,88 @@
+:root{
+    --card-width: 300px;
+    --card-radius: 6px;
+    --card-font-size: 0.85rem;
+    --card-background: #fff;
+    --card-transition: all .3s ease;
+    --card-image-height: 200px; 
+    --card-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    --card-shadow-hover: 5px 5px 20px rgba(0,0,0,0.4);
+    --card-color: #6a6a6a;
+    --card-body-line-height: 1.5;
+    --card-text-align: center;
+    --card-padding-body: 0.9375rem;
+    --card-button-padding: 35px;
+    --card-button-background: #ffff;
+    --card-button-color: rgb(42, 176, 209);
+    --card-divider-background: #c0c0c0; 
+}
+
+.card {
+    width: var(--card-width);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    background: var(--card-background);   
+    transition: var(--card-transition);
+    font-size: var(--card-font-size);
+}
+
+.card-shadow {
+    box-shadow: var(--card-shadow);
+}
+
+.card-shadow:hover {
+    box-shadow: var(--card-shadow-hover);
+}
+
+.card-translate:hover {
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: var(--card-image-height);
+}
+
+.card .card-body {
+    padding: var(--card-padding-body);
+    text-align: var(--card-text-align);
+}
+
+.card .card-body p {
+    line-height: var(--card-body-line-height);
+    color: var(--card-color);
+}
+
+.card .card-body h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .divider {
+    background: var(--card-divider-background);
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 1px;
+}
+
+.button-round {
+    padding: 10px;
+    padding-left: var(--card-button-padding);
+    padding-right: var(--card-button-padding);
+    width: auto;
+    margin: 15px;
+    border: 1px solid;
+    border-color: var(--card-button-color);
+    border-radius: 5px;
+    background: var(--card-button-background);
+    color: var(--card-button-color);
+    box-shadow: var(--card-shadow);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--card-transition);
+}
+
+.card .card-body button:hover {
+    background: #6a6a6a34;
+}

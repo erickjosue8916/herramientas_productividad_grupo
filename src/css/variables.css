@@ -1,0 +1,64 @@
+:root{
+    /*
+        START HEADER CONFIG
+    */
+    --header-padding: 10px;
+    --header-columns-templeta: 150px auto;
+    --header-menu-max-width: ; 
+    --header-logo-end: 2;
+    --header-menu-start: 5; 
+    --header-menu-end: 13;
+    /*
+        END HEADER CONFIG
+    */
+
+    /*
+        START MENU CONFIG
+    */
+    --menu-border: 0px solid #000;
+    --menu-primary-color:#000;
+    --menu-secondary-color: #fff; 
+    --menu-font-size: 1em;
+    --menu-padding-item: 10px;
+    /*
+        END MENU CONFIG
+    */
+    /* ------------------------------------------------------- */
+    /*
+        START SIDEBAR CONFIG
+    */
+    --sidebar-background: hsl(214, 60%, 48%);
+    --sidebar-color-items: rgba(230, 230, 230, .9);
+    --sidebar-color-items-hover:  rgba(51, 136, 179, 0.9) ;
+    --sidebar-transform-items: uppercase;
+    --sidebar-width: 300px;
+    --sidebar-position-left: -300px;
+    --sidebar-items-text-align: center;
+    --sidebar-font-size: 1em;
+     /*
+        END SIDEBAR CONFIG
+    */
+    /* ----------------------------------------------- */
+    /*
+        START CARD CONFIG
+    */
+    --card-width: 300px;
+    --card-radius: 6px;
+    --card-font-size: 0.85rem;
+    --card-background: #fff;
+    --card-transition: all .3s ease;
+    --card-image-height: 200px; 
+    --card-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    --card-shadow-hover: 5px 5px 20px rgba(0,0,0,0.4);
+    --card-color: #6a6a6a;
+    --card-body-line-height: 1.5;
+    --card-text-align: center;
+    --card-padding-body: 0.9375rem;
+    --card-button-padding: 35px;
+    --card-button-background: #ffff;
+    --card-button-color: rgb(42, 176, 209);
+    --card-divider-background: #c0c0c0; 
+     /*
+        END CARD CONFIG
+    */
+}
