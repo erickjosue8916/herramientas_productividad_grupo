@@ -211,6 +211,7 @@ body {
 
 #services{
   display: grid;
+  row-gap: 20px;
   justify-items: center;
 }
 
@@ -221,7 +222,7 @@ body {
   background: var(--card-background);   
   transition: var(--card-transition);
   font-size: var(--card-font-size);
-  
+  max-height: 400px;
 }
 
 .card-shadow {
@@ -337,3 +338,16 @@ body {
   background: rgba(0,0,0,0.5);
 }
 /* END HERO IMAGE */
+footer {
+  margin-top: 25px;
+  padding-top: 10px;
+  height: 50px;
+  background: #2f89fc;
+}
+
+.content-footer{
+  display: grid;
+  align-content: center;
+  color: #252a20;
+  justify-content: center;
+}
