@@ -111,6 +111,7 @@ body {
     background: rgba(0,0,0,0.5);
 }
 .container {
+    margin-top: 15px;
     display: grid;
     width: 90%;
     margin: auto;
