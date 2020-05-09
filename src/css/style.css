@@ -208,6 +208,13 @@ body {
 /* 
     START CARD STYLES
 */
+
+#services{
+  display: grid;
+  row-gap: 20px;
+  justify-items: center;
+}
+
 .card {
   width: var(--card-width);
   border-radius: var(--card-radius);
@@ -215,6 +222,7 @@ body {
   background: var(--card-background);   
   transition: var(--card-transition);
   font-size: var(--card-font-size);
+  max-height: 400px;
 }
 
 .card-shadow {
@@ -288,14 +296,13 @@ body {
   grid-row-gap: 15px;
   align-items: center;
   min-height: 90vh;
-
 }
 
 .container .section .title-content {
   display: grid;
   text-align: center;
   align-items: center;
-  padding: 15px;
+  padding-bottom: 15px;
 }
 
 .container .section .title-content a {
@@ -309,3 +316,87 @@ body {
 }
 
 /* END SECTION STYLES */
+
+/* START HERO IMAGE */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/car1.jpg");
+  background-position: center;
+  background-size: cover ;
+  background-attachment: fixed;
+  transition: all .5s ease;
+}
+
+.hero .layer {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-size: 40px;
+  color: rgba(255,255,255,0.5);
+  background: rgba(0,0,0,0.5);
+}
+/* END HERO IMAGE */
+
+.content {
+  display: grid;
+  justify-content: center;
+}
+
+.form-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+footer {
+  margin-top: 25px;
+  padding-top: 10px;
+  height: 50px;
+  background: #2f89fc;
+}
+
+.content-footer{
+  display: grid;
+  align-content: center;
+  color: #252a20;
+  justify-content: center;
+}
+/* FORM ESTYLE */
+.form {
+  display: grid;
+  padding: 15px;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.container__form {
+  display: grid;
+  justify-items: center;
+}
+
+.form__section {
+  display: grid;
+  padding: 5px;
+}
+
+.form-control-text {
+  grid-template-rows: 1fr 1fr;
+}
+
+.form-control-checkbox {
+  align-items: center;
+  justify-content: center;
+}
+
+.form__title {
+  align-content: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.location {
+  display: grid;
+  justify-content: center;
+}

@@ -6,7 +6,6 @@
 body {
     display: grid;
     grid-template-rows: auto auto auto auto;
-    background: black; 
 }
 .header {
     background: #2f89fc;
