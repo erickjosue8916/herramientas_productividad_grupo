@@ -5,23 +5,26 @@ import Controller from "./Controller";
 class AppExpress {
     public app:express.Application;
     public config:ExpressConfig;
+    public controllers:Controller;
     constructor(config:ExpressConfig, constrollers:Controller) {
         this.app = express();
         this.config = config
+        this.controllers = constrollers
         this.initializateMiddlewares()
-        this.initializateControllers(constrollers)
         
     }
-
-    private initializateMiddlewares() {
+    public addMiddleware(middleware:any) {
+        this.app.use(middleware)
+    }
+    public initializateMiddlewares() {
         this.app.use(express.json())
         
         if (this.config.environment === "dev") this.app.use(morgan("dev"))
     }
 
-    private initializateControllers(controllers:Controller) {
+    public initializateControllers() {
         
-        this.app.use(controllers.path, controllers.router)
+        this.app.use(this.controllers.path, this.controllers.router)
     }
 
     public listen() {
