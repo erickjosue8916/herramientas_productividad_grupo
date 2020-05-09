@@ -1,4 +1,4 @@
-import UserModel from "./user/User";
-import IUser from "./user/IUser.interface";
+import CarModel from "./car/Car";
+import ICar from "./car/ICar.interface";
 
-export { UserModel, IUser }
+export { CarModel, ICar }

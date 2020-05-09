@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carwash</title>
+    <script src="https://kit.fontawesome.com/3e11f034b2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/querys.css">
+</head>
+<body>
+
+    <!-- END SERVICES SECTION-->
+    <!-- START CONTACT SECTION -->
+    <div class="container">
+        <div class="section">
+            <div class="title-content">
+                <a name="contact"><h1 class="title">Admin</h1></a>
+            </div>
+            <div class="form-content">
+                <div class="container__form">
+                    <form class="form card card-shadow " id="form">
+        <!--                 <div class="form__section form__title">
+                            hola
+                        </div> -->
+                        <div class="form__section ">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form__section ">
+                            <label for="age">Año</label>
+                            <input type="text" name="age" id="age" required>
+                        </div>
+                        <div class="form__section ">
+                            <label for="category">Categoria</label>
+                            <select name="category" id="category">
+                                <option value="liviano">liviano</option>
+                                <option value="pesado">pesado</option>
+                            </select>
+                        </div>
+                        <div class="form__section ">
+                            <label for="price">Precio</label>
+                            <input type="text" name="name" id="price" required>
+                        </div>
+                        <div class="form__section ">
+                            <label for="transmition">Transmicion</label>
+                            <select name="transimiton" id="transmition">
+                                <option value="estandar">estandar</option>
+                                <option value="automatico">automatico</option>
+                            </select>
+                        </div>
+                        <div class="form__section form-control-button">
+                            <button type="submit" class="button-round" id="btn-save" >
+                                GUARDAR
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="location">
+                    <ul>
+                        <li>Guarda autos en la base de datos</li>
+                        <li>Los campos aun no están validados, precaucion al ingresarlo</li>
+                        <li>revisa los registros <a href="/api/v1/cars"> aquí </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTACT FORM -->
+
+    <!-- START FOOTER -->
+    <div class="main">
+        <footer>
+            <div class="content-footer">
+                    <div class="content-footer">
+                        &copy; Copyrith 2020
+                    </div>
+            </div>
+        </footer>
+    </div>
+    <!-- END FOOTER -->
+    <script>
+        const form = document.getElementById("form")
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            let name, age, category, price, transmition;
+            
+            try {
+                name = document.getElementById("name").value
+                age = parseInt(document.getElementById("age").value)
+                category = document.getElementById("category").value
+                price = parseInt(document.getElementById("price").value)
+                transmition = document.getElementById("transmition").value
+                
+            } catch (e) {
+                alert("ingresa bien los datos")
+                return 
+            }
+
+            try {
+                const config = {
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    method:"post",
+                    body: JSON.stringify({
+                        name, age, category, price, transmition
+                    })
+                }
+                
+                const request = await fetch("api/v1/cars", config)
+                alert("el dato a sido guardado")
+            } catch {
+                alert("hubo un error en el servidor :v")
+                return
+            }
+            
+        })
+    </script>
+</body>
+</html>
