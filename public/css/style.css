@@ -403,3 +403,8 @@ footer {
   display: grid;
   justify-content: center;
 }
+
+.location iframe {
+  display: block;
+  width: 600px;
+}

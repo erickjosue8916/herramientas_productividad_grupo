@@ -22,8 +22,10 @@
     .form-content {
         display: grid;
         grid-template-columns: 1fr;
-      
-      }
+    }
+    .location iframe {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
