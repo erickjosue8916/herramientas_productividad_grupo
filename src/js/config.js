@@ -27,3 +27,10 @@ const config = {
         when an unknown printer took a galley of type and scrambled`
     }
   ]
+
+const slider = [
+  "url('../img/car1.jpg')",
+  "url('../img/car2.jpg')",
+  "url('../img/car3.jpg')",
+  "url('../img/car4.jpg')",
+]
