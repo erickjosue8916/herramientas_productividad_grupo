@@ -1,20 +1,10 @@
 # herramientas_productividad_grupo
-Desarrollo de la materia herramientas de productiovidad
+Tarea pagina de Car Wash - ver online https://car-wash-tarea.herokuapp.com/ \
+ver como admin (simple - agregar carros a la db) https://car-wash-tarea.herokuapp.com/ \
+ver autos https://car-wash-tarea.herokuapp.com/api/v1/cars
 
-# estructura del proyecto
-
-- **css** : stilos css
-- **js** : javascript
-- **img** : imagenes
-
-# Nombramiento de variables 
-- uso de camelCase: comienzaMinusculaSiguintesPalabrasInicialMayuscula
-
-# Aprendizaje
-- uso de estiquetas html
-- propiedades css
-- 
-
-# documentacion 
-- https://devdocs.io/
-- https://www.freecodecamp.org/
+# integrantes
+* Erick Josue Saravia Aragon - SA18004
+* Jose Adolfo Guzman Solis - GS18030
+* Marlon Salomon Coreas Villanueva - CV18035
+* Edwin Alexander Benitez Granados -BG18016
